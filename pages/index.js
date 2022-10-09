@@ -8,15 +8,19 @@ export default function Home() {
     <>
       <Navbar />
       <div class="border-none h-[6px] bg-gradient-to-r from-[#665AEF] to-[#FC364C]"></div>
-      <div class="py-10 px-6 ">
-        <div>
-          <img
-            class="rounded l-lg"
-            src="../Assets/image_125.png"
-            alt="funny_faces.png"
-          />
-        </div>
+      <div class="py-10 px-6 bg-[#0D0D0D] relative">
+        <img
+          class="rounded l-lg"
+          src="../Assets/image_125.png"
+          alt="funny_faces.png"
+        />
       </div>
+      <img
+        class="absolute w-40 h-40 left-1/2 right-1/2 top-full transform -translate-y-1/2 -translate-x-1/2"
+        src="../Assets/Ellipse_37.png"
+        alt="Funny_face_button"
+      />
+
       <div className={styles.container}>
         <Head>
           <title>Create Next App</title>
