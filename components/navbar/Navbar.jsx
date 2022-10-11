@@ -4,7 +4,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <header class="flex flex-row md:flex md:items-center md:justify-between p-4 pb-0 shadow-lg md:pb-4 bg-[#0D0D0D]">
+    <header class=" relative z-20 flex flex-row md:flex md:items-center md:justify-between p-4 pb-0 shadow-lg md:pb-4 bg-[#0D0D0D]">
       <div class="basis-1/4 flex items-center mb-4 md:mb-0">
         <h1 class="leading-none text-2xl p-9">
           <a href="#">
@@ -71,6 +71,8 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+      <div class="border-none h-[6px] bg-gradient-to-r from-[#665AEF] to-[#FC364C]"></div>
+
       {/* <!-- END Global navigation --> */}
     </header>
 
