@@ -43,7 +43,7 @@ const Navbar = () => {
         <ul class="flex justify-around list-reset md:flex md:items-center font-Manrope font-semibold text-white">
           <li class="md:ml-4">
             <a
-              class="block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0"
+              class="block no-underline hover:underline py-2 text-grey-darkest text-base hover:text-slate-500 md:border-none md:p-0"
               href="#"
             >
               Lorem
@@ -51,7 +51,7 @@ const Navbar = () => {
           </li>
           <li class="md:ml-4">
             <a
-              class="border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0"
+              class="border-t block no-underline hover:underline py-2 text-grey-darkest text-base  hover:text-slate-500 md:border-none md:p-0"
               href="#"
             >
               Lorem
@@ -59,7 +59,7 @@ const Navbar = () => {
           </li>
           <li class="md:ml-4">
             <a
-              class="border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0"
+              class="border-t block no-underline hover:underline py-2 text-grey-darkest text-base  hover:text-slate-500 md:border-none md:p-0"
               href="#"
             >
               Lorem
