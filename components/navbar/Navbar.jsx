@@ -1,8 +1,14 @@
 import Image from "next/image";
 import { Input } from "postcss";
-import React from "react";
+import React, { useState } from "react";
 
 const Navbar = () => {
+  const [menuShow, setMenuShow] = useState("false");
+
+  const handleChange = function () {
+    setMenuShow(!menuShow);
+  };
+
   return (
     <>
       <nav className="bg-[#0D0D0D] px-2 sm:px-4 py-2.5">
@@ -49,6 +55,7 @@ const Navbar = () => {
               className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="navbar-search"
               aria-expanded="false"
+              onClick={handleChange}
             >
               <span className="sr-only">Open menu</span>
               <svg
@@ -68,7 +75,11 @@ const Navbar = () => {
           </div>
 
           <div
-            className=" justify-between items-center w-full md:flex md:w-auto md:order-1 "
+            className={
+              menuShow
+                ? "hidden justify-between items-center w-full md:flex md:w-auto md:order-1 "
+                : "justify-between items-center w-full md:flex md:w-auto md:order-1"
+            }
             id="navbar-search"
           >
             <div className="relative mt-3 md:hidden">
@@ -94,6 +105,7 @@ const Navbar = () => {
                 placeholder="Lorem ipsum"
               />
             </div>
+            <div className={" md:hidden"}></div>
             <ul className="flex flex-col p-4 font-Manrope font-extrabold text-sm text-white bg-[#0D0D0D] gap-3  md:flex-row md:space-x-8 md:mt-0 md:text-base md:font-extrabold md:border-0 md:bg-[#0D0D0D] ">
               <li>
                 <a

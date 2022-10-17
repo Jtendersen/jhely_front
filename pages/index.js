@@ -3,6 +3,7 @@ import Image from "next/image";
 import Accordion1 from "../components/accordion/Accordion1";
 import Navbar from "../components/navbar/Navbar";
 import styles from "../styles/Home.module.css";
+import { useState } from "react";
 
 export default function Home() {
   return (
@@ -108,8 +109,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-1 gap-10 lg:grid-cols-2 md:gap-5">
-          <div class=" p-10 lg:pl-60">
+        <div class="grid grid-cols-1 gap-10 xl:grid-cols-2 md:gap-5">
+          <div class=" p-5 xl:pl-60">
             <Accordion1 />
           </div>
         </div>
