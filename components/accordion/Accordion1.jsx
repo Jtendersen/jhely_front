@@ -13,7 +13,7 @@ const Accordion1 = () => {
         <h2 id="accordion-example-heading-1">
           <button
             type="button"
-            class="flex items-center w-full p-5 justify-between font-extrabold font-Manrope bg-[#0D0D0D80] text-left text-white rounded-t focus:ring-2 focus:ring-[#0D0D0D80]"
+            class="flex items-center w-full p-5 justify-between font-extrabold font-Manrope bg-[#0D0D0D80] bg-opacity-50 text-left text-white rounded-t  focus:ring-[#0D0D0D80]"
             aria-expanded="true"
             aria-controls="accordion-example-body-1"
             onClick={handleChange}
@@ -55,10 +55,10 @@ const Accordion1 = () => {
         </h2>
         <div
           id="accordion-example-body-1"
-          class={show ? "block" : "hidden"}
+          class={show ? "block rounded-b" : "hidden"}
           aria-labelledby="accordion-example-heading-1"
         >
-          <div class="p-2 font-Manrope bg-[#0D0D0D80] lg:p-5">
+          <div class="p-2 font-Manrope bg-[#0D0D0D80] bg-opacity-50 lg:p-5">
             <p class="mb-2 2xl:mr-40 text-white">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -164,18 +164,6 @@ const Accordion1 = () => {
                 </a>
               </div>
             </div>
-
-            {/* <p class="text-gray-500 dark:text-gray-400">
-              Check out this guide to learn how to{" "}
-              <a
-                href="/docs/getting-started/introduction/"
-                class="text-blue-600 dark:text-blue-500 hover:underline"
-              >
-                get started
-              </a>{" "}
-              and start developing websites even faster with components on top
-              of Tailwind CSS.
-            </p> */}
           </div>
         </div>
       </div>

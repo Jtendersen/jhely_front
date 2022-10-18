@@ -16,7 +16,7 @@ const Navbar = () => {
           <a href="/" className="flex items-center">
             <img
               src="../Assets/Logo.png"
-              className="  mr-3 h-6 sm:h-9 p-1"
+              className="  mr-3 my-6 h-6 sm:h-9 p-1"
               alt="Frontierx Logo"
             />
           </a>
@@ -43,7 +43,7 @@ const Navbar = () => {
                 <input
                   type="text"
                   id="search-navbar"
-                  className="block p-2 pl-10 w-full shadow-sm text-[#A2A2A2] font-Manrope font-semibold text-sm bg-[#1F1F1F] rounded-lg sm:text-sm border-0 focus:ring-slate-400 focus:border-slate-400 "
+                  className="block p-2 pl-10 w-full shadow-sm text-[#A2A2A2] font-Manrope font-semibold text-sm bg-[#1F1F1F] rounded-lg sm:text-sm border-0 focus:ring-slate-400 focus:border-slate-400 lg:w-72 xl:w-[700px] "
                   placeholder="Lorem ipsum"
                 />
               </div>
@@ -52,7 +52,7 @@ const Navbar = () => {
               id="openMenu"
               data-collapse-toggle="navbar-search"
               type="button"
-              className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
               aria-controls="navbar-search"
               aria-expanded="false"
               onClick={handleChange}
@@ -110,7 +110,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#"
-                  className="block py-2 pr-4 pl-3 text-white bg-[#0D0D0D] rounded md:bg-transparent md:text-[#A2A2A2] md:p-0"
+                  className="block py-2 pr-4 pl-3 text-white bg-[#0D0D0D] rounded md:hover:bg-transparent md:hover:text-[#A2A2A2] md:p-0"
                   aria-current="page"
                 >
                   Lorem
@@ -119,7 +119,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#"
-                  className="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 "
+                  className="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#A2A2A2] md:p-0 "
                 >
                   Lorem
                 </a>
@@ -127,7 +127,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#"
-                  className="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 "
+                  className="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#A2A2A2] md:p-0 "
                 >
                   Lorem
                 </a>

@@ -4,18 +4,29 @@ import Accordion1 from "../components/accordion/Accordion1";
 import Navbar from "../components/navbar/Navbar";
 import styles from "../styles/Home.module.css";
 import { useState } from "react";
+import Accordion2 from "../components/accordion/Accordion2";
 
 export default function Home() {
+  const [imgShow, setImgShow] = useState("true");
+
+  const handleChange = function () {
+    setImgShow(!imgShow);
+  };
+
   return (
     <>
       <Navbar />
       <div class="relative bg-[#0D0D0D]">
-        <div class="absolute z-0 left-1/4 max-w-full h-[1307px] w-3/4 bg-gradient-to-bl from-[#181818] via-[#3A273F] to-[#2e2d66] "></div>
+        <div class="absolute z-0 left-1/4 max-w-full h-full w-3/4 animate-pulse bg-gradient-to-tr from-[#181818] via-[#3A273F] to-[#2e2d66] "></div>
 
         <div class=" grid grid-cols-7">
           <div class="col-span-7 ">
             <img
-              class=" rounded-xl pt-5 px-3 sm:pt-8 sm:px-4 md:pt-10 md:px-6 relative "
+              class={
+                imgShow
+                  ? "rounded-xl pt-5 px-3 sm:pt-8 sm:px-4 md:pt-10 md:px-6 relative "
+                  : "rounded-xl pt-5 px-3 sm:pt-8 sm:px-4 md:pt-10 md:px-6 relative blur-xl"
+              }
               src="../Assets/image_125.png"
               alt="funny_faces.png"
             />
@@ -23,7 +34,12 @@ export default function Home() {
         </div>
         <div class="flex justify-center transform -translate-y-1/2 ">
           <div class=" w-14 sm:w-24 md:w-28 lg:w-36 xl:w-44 2xl:w-64 z-0 ">
-            <img src="../Assets/Ellipse_37.png " />
+            <button onClick={handleChange}>
+              <img
+                src="../Assets/Ellipse_37.png"
+                class="animate-bounce hover:animate-none"
+              />
+            </button>
           </div>
         </div>
 
@@ -44,7 +60,7 @@ export default function Home() {
           <div class="col-start-1 text-xs md:col-start-3 md:text-base">
             <div class=" text-[#F6F6F6] font-extrabold">
               <>
-                <button class="flex flex-wrap justify-evenly items-center bg-[#0D0D0D80] bg-opacity-50 border border-[#F6F6F6] shadow-inner rounded-md px-8 py-4 w-full">
+                <button class="flex flex-wrap justify-evenly items-center bg-[#0D0D0D80] bg-opacity-50 focus:border focus:border-[#F6F6F6] shadow-inner rounded-md px-8 py-4 w-full">
                   <svg
                     width="15"
                     height="16"
@@ -67,7 +83,7 @@ export default function Home() {
           <div class=" col-start-2 text-xs md:col-start-4 md:text-base">
             <div class=" text-[#F6F6F6] font-extrabold">
               <>
-                <button class="flex flex-wrap justify-evenly items-center bg-[#0D0D0D]  rounded-md px-8 py-4 w-full">
+                <button class="flex flex-wrap justify-evenly items-center bg-[#0D0D0D] focus:border focus:border-[#F6F6F6] rounded-md px-8 py-4 w-full">
                   <svg
                     width="15"
                     height="15"
@@ -90,7 +106,7 @@ export default function Home() {
           <div class=" col-start-3 text-xs md:col-start-5 md:text-base">
             <div class=" text-[#F6F6F6] font-extrabold">
               <>
-                <button class="flex flex-wrap justify-evenly items-center bg-[#0D0D0D80] bg-opacity-50 rounded-md px-8 py-4 w-full">
+                <button class="flex flex-wrap justify-evenly items-center bg-[#0D0D0D80] bg-opacity-50 focus:border focus:border-[#F6F6F6] rounded-md px-8 py-4 w-full">
                   <svg
                     width="16"
                     height="18"
@@ -109,12 +125,22 @@ export default function Home() {
             </div>
           </div>
         </div>
+
         <div class="grid grid-cols-1 gap-10 xl:grid-cols-2 md:gap-5">
           <div class=" p-5 xl:pl-60">
             <Accordion1 />
           </div>
+          <div class=" p-5 xl:pr-60">
+            <Accordion2 />
+          </div>
+          <div class="  p-5 xl:col-start-2 xl:pr-60">
+            <Accordion1 />
+          </div>
         </div>
       </div>
+      <footer class=" z-20 bg-[#0D0D0D] relative flex justify-center h-full">
+        <img src="./Assets/image 27.png" class=" p-28" />
+      </footer>
     </>
   );
 }
