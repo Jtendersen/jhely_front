@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Input } from "postcss";
 import React, { useState } from "react";
 
@@ -13,13 +14,13 @@ const Navbar = () => {
     <>
       <nav className="bg-[#0D0D0D] px-2 sm:px-4 py-2.5">
         <div className="container flex flex-wrap justify-between items-center mx-auto">
-          <a href="/" className="flex items-center">
+          <Link href="/" className="flex items-center">
             <img
               src="../Assets/Logo.png"
               className="  mr-3 my-6 h-6 sm:h-9 p-1"
               alt="Frontierx Logo"
             />
-          </a>
+          </Link>
 
           <div className="flex md:order-1">
             <div className="hidden relative md:block">
@@ -108,29 +109,29 @@ const Navbar = () => {
             <div className={" md:hidden"}></div>
             <ul className="flex flex-col p-4 font-Manrope font-extrabold text-sm text-white bg-[#0D0D0D] gap-3  md:flex-row md:space-x-8 md:mt-0 md:text-base md:font-extrabold md:border-0 md:bg-[#0D0D0D] ">
               <li>
-                <a
+                <Link
                   href="#"
                   className="block py-2 pr-4 pl-3 text-white bg-[#0D0D0D] rounded md:hover:bg-transparent md:hover:text-[#A2A2A2] md:p-0"
                   aria-current="page"
                 >
                   Lorem
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#A2A2A2] md:p-0 "
                 >
                   Lorem
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="#"
                   className="block py-2 pr-4 pl-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-[#A2A2A2] md:p-0 "
                 >
                   Lorem
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

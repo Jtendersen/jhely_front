@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Accordion1 = () => {
@@ -81,12 +82,11 @@ const Accordion1 = () => {
                     fill="#F3F3F3"
                   />
                 </svg>
-                <a
-                  href="/"
-                  className="flex items-center text-[#FC364C] ml-3 font-Manrope text-xs lg:text-sm"
-                >
-                  Lorem ipsum.com
-                </a>
+                <Link href="/">
+                  <a className="flex items-center text-[#FC364C] ml-3 font-Manrope text-xs lg:text-sm">
+                    Lorem ipsum.com
+                  </a>
+                </Link>
               </div>
 
               <div class="flex justify-start">
@@ -114,12 +114,11 @@ const Accordion1 = () => {
                     fill="#2A2A2A"
                   />
                 </svg>
-                <a
-                  href="/"
-                  className="flex items-center text-[#FC364C] ml-3 font-Manrope text-xs lg:text-sm"
-                >
-                  @Lorem ipsum
-                </a>
+                <Link href="/">
+                  <a className="flex items-center text-[#FC364C] ml-3 font-Manrope text-xs lg:text-sm">
+                    @Lorem ipsum
+                  </a>
+                </Link>
               </div>
 
               <div class="flex justify-start">
@@ -135,12 +134,11 @@ const Accordion1 = () => {
                     fill="#F3F3F3"
                   />
                 </svg>
-                <a
-                  href="/"
-                  className="flex items-center text-[#FC364C] ml-3 font-Manrope text-xs lg:text-sm"
-                >
-                  @Lorem ipsum
-                </a>
+                <Link href="/">
+                  <a className="flex items-center text-[#FC364C] ml-3 font-Manrope text-xs lg:text-sm">
+                    @Lorem ipsum
+                  </a>
+                </Link>
               </div>
 
               <div class="flex justify-start">
@@ -156,12 +154,11 @@ const Accordion1 = () => {
                     fill="#F3F3F3"
                   />
                 </svg>
-                <a
-                  href="/"
-                  className="flex items-center text-white ml-3 font-Manrope text-xs lg:text-sm"
-                >
-                  @Lorem ipsum
-                </a>
+                <Link href="/">
+                  <a className="flex items-center text-white ml-3 font-Manrope text-xs lg:text-sm">
+                    @Lorem ipsum
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
