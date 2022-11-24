@@ -1,8 +1,5 @@
-import Head from "next/head";
-import Image from "next/image";
 import Accordion1 from "../components/accordion/Accordion1";
 import Navbar from "../components/navbar/Navbar";
-import styles from "../styles/Home.module.css";
 import { useState } from "react";
 import Accordion2 from "../components/accordion/Accordion2";
 
